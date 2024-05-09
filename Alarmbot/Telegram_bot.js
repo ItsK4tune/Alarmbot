@@ -1,16 +1,16 @@
-import Start_c from './controller/start.js';
-import help_c from './controller/help.js';
-import setAlarm_c from './controller/setAlarm.js';
-import setDailyAlarm_c from './controller/setDailyAlarm.js';
-import show_c from './controller/show.js';
-import deleteAlarm_c from './controller/deleteAlarm.js';
-import deleteDailyAlarm_c from './controller/deleteDailyAlarm.js';
-import deleteAllAlarm_c from './controller/deleteAllAlarm.js';
-import Stop_c from './controller/stop.js';
-import otherInput_c from './controller/otherInput.js';
+import Start_c from './src/controller/start.js';
+import help_c from './src/controller/help.js';
+import setAlarm_c from './src/controller/setAlarm.js';
+import setDailyAlarm_c from './src/controller/setDailyAlarm.js';
+import show_c from './src/controller/show.js';
+import deleteAlarm_c from './src/controller/deleteAlarm.js';
+import deleteDailyAlarm_c from './src/controller/deleteDailyAlarm.js';
+import deleteAllAlarm_c from './src/controller/deleteAllAlarm.js';
+import Stop_c from './src/controller/stop.js';
+import otherInput_c from './src/controller/otherInput.js';
 
-import botTick from './botDelayTime.js';
-import bot from './initBot.js';
+import botTick from './src/botDelayTime.js';
+import bot from './src/initBot.js';
 
 import 'dotenv/config'
 
