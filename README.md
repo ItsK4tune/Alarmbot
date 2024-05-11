@@ -1,0 +1,3 @@
+- Use /start at the first time you use this bot or after using /stop.
+- Use /help to see more commands.
+- This dude is still in beta, so i really need feedbacks to improve it. You can send me feedbacks at: duongcuteyb@gmail.com 
