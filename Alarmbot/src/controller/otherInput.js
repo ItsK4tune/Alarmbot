@@ -7,7 +7,7 @@ let otherInput_c = (msg) => {
     let getChatBotRunning = isBotRunning.find(Id => Id == chatId);
 
     // No sending message when request start with ... in excludedCommands
-    if((!getChatBotRunning) && msg.text !== '/start' && msg.text !== '/stop'){
+    if((!getChatBotRunning) && msg.text !== ('/start') && msg.text !== '/stop'){
         sendMessage(chatId, 'I\'m currently off to work right now. Use /start to make me return to work');
         return;
     } else {

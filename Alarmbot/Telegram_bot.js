@@ -15,10 +15,10 @@ import bot from './src/initBot.js';
 import 'dotenv/config'
 
 // Handle /start command
-bot.onText(/\/start/, Start_c);
+bot.onText(/^\/start$/, Start_c);
 
 // Command to message a help table
-bot.onText(/\/help/, help_c);
+bot.onText(/^\/help$/, help_c);
 
 // Command to set an alarm
 bot.onText(/\/setalarm (\d{1,2}:\d{1,2}) (.+)/, setAlarm_c);
@@ -27,7 +27,7 @@ bot.onText(/\/setalarm (\d{1,2}:\d{1,2}) (.+)/, setAlarm_c);
 bot.onText(/\/setdailyalarm (\d{1,2}:\d{1,2}) (.+)/, setDailyAlarm_c);
 
 // Command to show all set alarm
-bot.onText(/\/show/, show_c);
+bot.onText(/^\/show$/, show_c);
 
 // Command to delete an alarm
 bot.onText(/\/deletealarm (\d{1,2}:\d{1,2})/, deleteAlarm_c);
@@ -36,12 +36,12 @@ bot.onText(/\/deletealarm (\d{1,2}:\d{1,2})/, deleteAlarm_c);
 bot.onText(/\/deletedailyalarm (\d{1,2}:\d{1,2})/, deleteDailyAlarm_c);
 
 // Command to delete all alarms
-bot.onText(/\/deleteallalarm/, deleteAllAlarm_c);
+bot.onText(/^\/deleteallalarm$/, deleteAllAlarm_c);
 
 // Handle unknown commands
 bot.on('message', otherInput_c);
 
 // Handle /stop command
-bot.onText(/\/stop/, Stop_c);
+bot.onText(/^\/stop$/, Stop_c);
 
 botTick();
